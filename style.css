@@ -1,0 +1,414 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --fnt: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1030px;
+}
+/* логотип */
+.logoproj{
+    width: 40%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.duga{
+    z-index: 2;
+    position: absolute;
+}
+.zdorov{
+z-index: 1;
+}
+/* Шапка */
+.navbar{
+    width: 100%;
+    /* background-image: url(img/Rectangle98.png); */
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(102, 104, 221);
+}
+/* верх шапки */
+.navup{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-image: url(img/Rectangle98.png);
+    align-items: center;
+}
+.butall{
+    width: 232px;
+    height: 58px;
+    background-color: yellow;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: var(--fnt);
+}
+.navbutton{
+    display: flex;
+    color: white;
+}
+.mennav{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: var(--fnt);
+}
+
+
+/* табы при наведении */
+/* .tabs {
+    font-size: 0;
+    width: 100%;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+#tab-btn-11:hover~#content-11,
+#tab-btn-22:hover~#content-22,
+#tab-btn-33:hover~#content-33,
+#tab-btn-44:hover~#content-44,
+#tab-btn-55:hover~#content-55,
+#tab-btn-66:hover~#content-66{
+    display: block;
+    background-color: #C4C4C4;
+    width: 90%;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+} */
+/* низ шапки */
+.navdown{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: var(--fnt);
+}
+.navdown li{
+    display: inline;
+    justify-content: flex-start;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+/* основная часть сайта */
+.allinfo{
+    margin-top: 2rem;
+    width: 100%;
+    height: 1150px;
+    border-radius: 20px;
+    box-shadow: 0.4em 0.4em 15px rgba(122,122,122,0.5);
+}
+/* товары */
+.prodlist{
+    padding-top: 3rem;
+    display: flex;
+}
+/* фото товара */
+.prodsmallphoto{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+hr{
+    margin: 2rem 0rem;
+    width: 99.8%;
+    color: rgb(248, 248, 248);
+
+}
+/* информация о товаре */
+.prodinfo{
+    width: 392px;
+    line-height: 1.4rem;
+}
+h1{
+    line-height: 2.5rem;
+}
+p{
+    margin-bottom: 1rem;
+    font-family: var(--fnt);
+}
+/* карточки  продутка */
+.prodcards{
+    padding-top: 1rem;
+    align-items: center;
+}
+.youlike{
+    font-weight: bold;
+    font-size: 42px;  
+    text-align: center;
+}
+/* карточка */
+.cards{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.card{
+    width: 33%;
+    text-align: center;
+    padding: 3rem 0rem;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.card:hover{
+    border: 1px solid black;
+    
+}
+.infoporf{
+    height: 76px;
+    width: 198px;
+}
+.prodprice{
+    font-weight: bold;
+    font-size:28px;  
+}
+.prodbutt{
+    width: 206px;
+    height: 45px;
+    background-color: #D7D7D7;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: var(--fnt);
+}
+.prodbutt:hover{
+    background-color: #FFF602;
+}
+
+/* нижняя часть информации */
+
+.allinfo__down{
+    margin-top: 2rem;
+    width: 100%;
+    height: 2100px;
+    border-radius: 20px;
+    box-shadow: 0.4em 0.4em 15px rgba(122,122,122,0.5);
+}
+
+.cutlet{
+    width: 100%;
+    height: 422px;
+    background-image: url(img/Rectangle92.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lifefood{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 45%;
+}
+.firm{
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+.firmlogo{
+    width: 60%;
+    padding-top: 1rem;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+.butall__down{
+    width: 232px;
+    height: 58px;
+    background-color: yellow;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: var(--fnt);
+}
+.btndwn{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* О нас */
+.aboutus{
+    width: 100%;
+    height: 472.4px;
+    background-color: #0055D3;
+    display: flex;
+}
+.biography{
+    margin-top: 4rem;
+    width: 40%;
+}
+.infocomp{
+    font-weight: bold;
+    font-size: 42px;  
+    text-align: center;
+    color: white;
+}
+.textcomp{
+    color: white;
+    line-height: 1.5rem;
+}
+.imgvector{
+    align-items: flex-end;
+    margin: 0;
+}
+/* предподвал */
+.startfooter{
+    margin-top: 9rem;
+}
+.navbutton__down{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.mennav__down{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    line-height: 4rem;
+    font-family: var(--fnt);
+    width: 15%;
+}
+ /* табы */
+.tabs {
+    font-size: 0;
+    width: 100%;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5,
+#tab-btn-6:checked~#content-6{
+    display: block;
+    background-color: #C4C4C4;
+    width: 90%;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+
+/* цитата */
+.txtquote{
+    padding: 2rem;
+    line-height: 1.8rem;
+}
+
+/* подвал */
+.footer{
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    width: 100%;
+    height: 212px;
+    border-radius: 20px;
+    box-shadow: 0.4em 0.4em 15px rgba(122,122,122,0.5);
+}
+.paysys{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.copyright{
+    text-align: center;
+    margin-top: 3rem;
+    width: 55%;
+}
+
+
+@media(min-width: 0px) and (max-width: 600px){
+    .zdorov{
+        width: 250px;
+        height: 80%;
+    }
+    .butall{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediabutt{
+        margin-top: 2rem;
+        width: 100%;
+        height: 400px;
+        column-fill: balance-all;
+        column-count: 2;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    .navup{
+        display: inline-block;
+        width: 100%;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* .navbutton{
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+        
+    } */
+    .mennav{
+        width: 90%;
+        align-items: center;
+    }
+}
