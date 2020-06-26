@@ -27,7 +27,6 @@ z-index: 1;
 /* Шапка */
 .navbar{
     width: 100%;
-    /* background-image: url(img/Rectangle98.png); */
     border-radius: 20px;
     margin-bottom: 2rem;
     border: 1px solid rgb(102, 104, 221);
@@ -53,58 +52,18 @@ z-index: 1;
     display: flex;
     color: white;
 }
+.mediabutt{
+    display: flex;
+    color: white;
+}
 .mennav{
-    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     font-family: var(--fnt);
 }
 
-
-/* табы при наведении */
-/* .tabs {
-    font-size: 0;
-    width: 100%;
-}
-
-.tabs>input[type="radio"] {
-    display: none;
-}
-
-.tabs>div {
-    display: none;
-    padding: 10px 15px;
-    font-size: 16px;
-}
-#tab-btn-11:hover~#content-11,
-#tab-btn-22:hover~#content-22,
-#tab-btn-33:hover~#content-33,
-#tab-btn-44:hover~#content-44,
-#tab-btn-55:hover~#content-55,
-#tab-btn-66:hover~#content-66{
-    display: block;
-    background-color: #C4C4C4;
-    width: 90%;
-}
-
-.tabs>label {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    padding: 2px 8px;
-    font-size: 16px;
-    line-height: 1.5;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-    cursor: pointer;
-    position: relative;
-    top: 1px;
-}
-
-.tabs>label:not(:first-of-type) {
-    border-left: none;
-} */
 /* низ шапки */
 .navdown{
     width: 100%;
@@ -134,6 +93,10 @@ z-index: 1;
     display: flex;
 }
 /* фото товара */
+.bigprodphoto{
+    display: flex;
+    align-items: center;
+}
 .prodsmallphoto{
     padding-top: 2rem;
     display: flex;
@@ -147,7 +110,7 @@ hr{
 }
 /* информация о товаре */
 .prodinfo{
-    width: 392px;
+    width: 40%;
     line-height: 1.4rem;
 }
 h1{
@@ -239,7 +202,6 @@ p{
     width: 60%;
     padding-top: 1rem;
     display: flex;
-    /* justify-content: flex-start; */
     align-items: center;
 }
 .butall__down{
@@ -267,6 +229,7 @@ p{
 .biography{
     margin-top: 4rem;
     width: 40%;
+    text-align: center;
 }
 .infocomp{
     font-weight: bold;
@@ -372,7 +335,7 @@ p{
     width: 55%;
 }
 
-
+/* телефоны */
 @media(min-width: 0px) and (max-width: 600px){
     .zdorov{
         width: 250px;
@@ -385,10 +348,9 @@ p{
         justify-content: center;
     }
     .mediabutt{
-        margin-top: 2rem;
+        padding-top: 1rem;
         width: 100%;
         height: 400px;
-        column-fill: balance-all;
         column-count: 2;
         display: inline-block;
         align-items: center;
@@ -397,18 +359,340 @@ p{
     .navup{
         display: inline-block;
         width: 100%;
-        height: 350px;
+        height: 380px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    /* .navbutton{
-        flex-direction: column;
-        width: 200px;
-        height: 300px;
-        
-    } */
+    .navdown{
+        align-items: center;
+        padding: 1rem 0;
+    }
+    ul{
+        align-items: center;
+        column-count: 2;
+    }
+    li{
+        padding: 1rem;
+    }
     .mennav{
         width: 90%;
         align-items: center;
+    }
+    .prodphoto{
+        width: 90%;
+    }
+    .prodlist{
+        display: inline-block;
+    }
+    .prodinfo{
+        width: 90%;
+        align-items: center;
+    }
+    .allinfo{
+        height: 2420px;
+    }
+    .cards{
+        width: 100%;
+        display: inline-block;
+        column-count: 1;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+    .prodcards{
+        width: 100%;
+    }
+    .firm{
+        width: 100%;
+    }
+    .cutlet{
+        width: 100%;
+    }
+    .pseudocutlet{
+        display: none;
+    }
+    .aboutus{
+        display: inline-block;
+        height: 600px;
+    }
+    .imgvector{
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+    }
+    .biography{
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        background-image: url(img/Vector\(7\).png);
+        text-align: center;
+    }
+    .vector{
+        width: 120%;
+        height: 560px;
+        margin-left: -1rem;
+    }
+    .textcomp{
+        width: 90%;
+    }
+    .allinfo__down{
+        height: 3500px;
+    }
+    .tabs > label{
+        width: 50%;
+        padding: 0;
+    }
+    .mennav__down{
+        width: 100%;
+        padding: 0;
+    }
+    .paysys{
+        margin-top: 3rem;
+        width: 50%;
+    }
+}
+
+/* планшеты */
+@media(min-width: 601px) and (max-width: 800px){
+    .zdorov{
+        width: 250px;
+        height: 80%;
+    }
+    .butall{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediabutt{
+        padding-top: 1rem;
+        width: 100%;
+        height: 400px;
+        column-count: 2;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    .navup{
+        display: inline-block;
+        width: 100%;
+        height: 380px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navdown{
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .navdown li{
+        align-items: center;
+        padding: 5px;
+        display: inline-block;
+    }
+    ul{
+        text-align: center;
+    }
+    li{
+        padding: 1rem;
+        
+    }
+    .mennav{
+        width: 90%;
+        align-items: center;
+    }
+    .prodphoto{
+        width: 90%;
+    }
+    .prodlist{
+        display: inline-block;
+    }
+    .prodinfo{
+        width: 90%;
+        align-items: center;
+    }
+    .allinfo{
+        height: 2420px;
+    }
+    .cards{
+        width: 100%;
+        display: inline-block;
+        column-count: 1;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+    .prodcards{
+        width: 60%;
+    }
+    .firm{
+        width: 80%;
+    }
+    .cutlet{
+        width: 100%;
+    }
+    .pseudocutlet{
+        display: none;
+    }
+    .aboutus{
+        display: inline-block;
+        height: 400px;
+    }
+    .imgvector{
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+    }
+    .biography{
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        background-image: url(img/Vector\(7\).png);
+        text-align: center;
+    }
+    .vector{
+        width: 120%;
+        height: 400px;
+        margin-left: -2rem;
+    }
+    .textcomp{
+        width: 90%;
+    }
+    .allinfo__down{
+        height: 3150px;
+    }
+    .tabs > label{
+        width: 50%;
+        padding: 0;
+    }
+    .mennav__down{
+        width: 100%;
+        padding: 0;
+    }
+    .paysys{
+        margin-top: 3rem;
+        width: 50%;
+    }
+}
+
+/* лаптоп */
+@media(min-width: 801px) and (max-width: 1024px){
+    .zdorov{
+        width: 250px;
+        height: 80%;
+    }
+    .butall{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediabutt{
+        padding-top: 1rem;
+        width: 100%;
+        height: 400px;
+        column-count: 3;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    .navup{
+        display: inline-block;
+        width: 100%;
+        height: 280px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navdown{
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .navdown li{
+        align-items: center;
+        padding: 5px;
+        display: inline-block;
+    }
+    ul{
+        text-align: center;
+        column-count: 3;
+    }
+    li{
+        padding: 1rem;
+        
+    }
+    .mennav{
+        width: 90%;
+        align-items: center;
+    }
+    .prodcards{
+        width: 100%;
+    }
+    .prodphoto{
+        width: 50%;
+    }
+    .prodlist{
+        padding: 1rem;
+    }
+    .prodinfo{
+        width: 50%;
+        align-items: center;
+    }
+    .allinfo{
+        height: 1100px;
+    }
+    .cards{
+        width: 100%;
+        column-count: 1;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+    .firm{
+        width: 50%;
+    }
+    .cutlet{
+        width: 100%;
+    }
+    .aboutus{
+        display: flex;
+        height: 400px;
+    }
+    .imgvector{
+        width: 100%;
+        height: 100%;
+        margin-left: -5rem;
+    }
+    .biography{
+        margin-top: 1rem;
+        margin-left: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .vector{
+        width: 120%;
+        height: 400px;
+        margin-left: 12rem;
+    }
+    .textcomp{
+        width: 100%;
+    }
+    .allinfo__down{
+        height: 2250px;
+    }
+    .tabs > label{
+        width: 50%;
+        padding: 0;
+    }
+    .mennav__down{
+        width: 100%;
+        padding: 0;
+    }
+    .paysys{
+        margin-top: 3rem;
+        width: 50%;
     }
 }
